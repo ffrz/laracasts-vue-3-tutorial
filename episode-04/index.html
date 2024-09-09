@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-full grid place-items-center">
+    <div id="app">
+      <div class="">
+        <app-button>Button 1</app-button><br /><br />
+        <app-button>Button 2</app-button>
+      </div>
+    </div>
+    <script>
+      let app = {
+        components: {
+          "app-button": {
+            data() {
+              return {
+                processing: true,
+              }
+            },
+            mounted() {
+              // alert("Hello!");
+            },
+            template: `
+            <button class="px-5 py-2 border rounded font-bold bg-gray-200 hover:bg-gray-100 disabled:cursor-not-allowed" :disabled="processing">
+              <slot />
+            </button>
+            `,
+            
+          },
+        },
+      };
+      Vue.createApp(app).mount("#app");
+    </script>
+  </body>
+</html>

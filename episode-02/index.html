@@ -32,7 +32,7 @@
       </button>
     </div>
     <script>
-      Vue.createApp({
+      let app = {
         data() {
           return {
             active: false,
@@ -41,9 +41,10 @@
         methods: {
           toggle() {
             this.active = !this.active;
-          }
-        }
-      }).mount("#app");
+          },
+        },
+      };
+      Vue.createApp(app).mount("#app");
     </script>
   </body>
 </html>

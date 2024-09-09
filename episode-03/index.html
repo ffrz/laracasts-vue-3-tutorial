@@ -33,7 +33,7 @@
       </section>
     </div>
     <script>
-      Vue.createApp({
+      let app = {
         data() {
           return {
             tasks: [
@@ -51,7 +51,8 @@
             return this.tasks.filter((task) => task.completed);
           },
         },
-      }).mount("#app");
+      };
+      Vue.createApp(app).mount("#app");
     </script>
   </body>
 </html>

@@ -12,18 +12,19 @@
       <p>{{ greeting }} ({{ greeting.length }})</p>
     </div>
     <script>
-      Vue.createApp({
+      let app = {
         data() {
           return {
             greeting: "",
           };
         },
         mounted() {
-            setTimeout(() => {
-                this.greeting = "Hello, World!!"
-            }, 1000)
-        }
-      }).mount("#app");
+          setTimeout(() => {
+            this.greeting = "Hello, World!!";
+          }, 1000);
+        },
+      };
+      Vue.createApp(app).mount("#app");
     </script>
   </body>
 </html>
