@@ -1,4 +1,4 @@
-import AppButton from './AppButton.js';
+import AppButton from './components/AppButton.js';
 
 export default {
     components: {
