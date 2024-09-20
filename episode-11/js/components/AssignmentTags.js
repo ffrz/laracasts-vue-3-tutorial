@@ -14,7 +14,7 @@ export default {
     `,
     props: {
         initialTags: Array,
-        currentTag: 'all',
+        currentTag: String,
     },
     computed: {
         tags() {
