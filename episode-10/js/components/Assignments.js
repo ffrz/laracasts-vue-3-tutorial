@@ -27,6 +27,7 @@ export default {
                 id: this.tasks.length + 1,
                 name: task,
                 completed: false,
+                tag: 'uncategorized',
             });
         }
     },
