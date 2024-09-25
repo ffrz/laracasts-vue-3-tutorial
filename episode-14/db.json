@@ -1,0 +1,8 @@
+{
+  "tasks": [
+    { "id": 1, "name": "Learn Javascript", "completed": false, "tag": "js" },
+    { "id": 2, "name": "Learn Vue", "completed": false, "tag": "framework" },
+    { "id": 3, "name": "Learn Quasar", "completed": false, "tag": "framework" },
+    { "id": 4, "name": "Learn something new", "completed": true, "tag": "others" }
+  ]
+}

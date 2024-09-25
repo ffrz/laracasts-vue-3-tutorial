@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "start": "npx json-server db.json | npx serve -p 4000"
+    }
+}
